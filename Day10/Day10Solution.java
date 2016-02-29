@@ -17,11 +17,7 @@ public class Day10Solution {
 			String current = oldNum.substring(0, 1);
 			int currentCount = 1;
 			for (int i = 1; i < oldNum.length(); i++) {
-				if (i == oldNum.length() && current.equals(oldNum.substring(i-1, i))) {
-					newNum.append(currentCount);
-					newNum.append(current);
-				}
-				else if (i == oldNum.length() - 1) {
+				if (i == oldNum.length() - 1) {
 					newNum.append(currentCount);
 					newNum.append(oldNum.substring(i-1, i));
 					newNum.append(1);
