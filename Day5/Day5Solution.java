@@ -2,10 +2,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Day5Solution {
+public class Day5 {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner in = new Scanner("Day5input.txt");
+		printNumberOfNice(new File("Day5Input.txt"));
+	}
+	
+	public static void printNumberOfNice(File input) throws FileNotFoundException {
+		Scanner in = new Scanner(input);
 		int numberOfNice = 0;
 		
 		while (in.hasNextLine()) {
